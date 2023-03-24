@@ -54,7 +54,7 @@ jobs:
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7FA161BB9A0C4AA280ABC1E7B67FC266 }}
           package: .
       - name: Start the Node.js app
-            run: |
-              cd /home/site/wwwroot
-              npm install
-              npm run dev
+        run: |
+        cd /home/site/wwwroot
+        npm install
+        npm run dev
